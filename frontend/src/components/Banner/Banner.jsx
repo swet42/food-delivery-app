@@ -81,22 +81,6 @@ const Banner = () => {
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-amber-900/40 mix-blend-multiply" />
             </div>
-
-            {/* Orbiting Images */}
-            {orbitImages.map((imgSrc, index) => (
-              <div
-                key={index}
-                className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-                  ${index === 0 ? 'orbit' : `orbit-delay-${index * 5}`} 
-                  w-[80px] xs:w-[100px] sm:w-[150px] h-[80px] xs:h-[100px] sm:h-[150px]`}
-              >
-                <img
-                  src={imgSrc}
-                  alt={`Orbiting ${index + 1}`}
-                  className="w-full h-full rounded-full border border-amber-500/30 shadow-lg bg-amber-900/20 p-1 object-cover"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </div>
